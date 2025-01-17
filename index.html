@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts About Japanese Anime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Facts About Japanese Anime</h1>
+        <button id="factButton">Show a Fun Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+    <script>
+        const facts = [
+            "Anime has its roots in early 20th-century Japanese film, with the first known anime dating back to 1917.",
+            "Anime encompasses a wide range of genres, including action, romance, horror, fantasy, and science fiction, appealing to various age groups and demographics.",
+            "Many anime series are adaptations of manga (Japanese comic books), which often serve as the source material for the stories and characters.",
+            "Anime has significantly influenced global pop culture, inspiring countless artists, filmmakers, and creators outside of Japan.",
+            "Founded by Hayao Miyazaki and Isao Takahata, Studio Ghibli is one of the most renowned anime studios, known for its critically acclaimed films like 'Spirited Away' and 'My Neighbor Totoro.'",
+            "Events like Anime Expo and Comiket attract thousands of fans each year, celebrating anime, manga, and Japanese pop culture through panels, merchandise, and cosplay.",
+            "Voice actors (seiyuu) in anime often gain significant popularity, with some even holding concerts and events due to their fanbase.",
+            "Anime can vary widely in content, with some series targeting children while others explore mature themes, leading to discussions about censorship and age ratings.",
+            "Streaming platforms like Crunchyroll and Netflix have made anime more accessible worldwide, contributing to its growing popularity outside Japan.",
+            "Many anime series incorporate elements of Japanese culture, folklore, and history, providing viewers with insights into Japan's traditions and societal norms."
+        ];
+
+        document.getElementById('factButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('factDisplay').innerText = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>
